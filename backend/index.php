@@ -25,24 +25,17 @@
                         <h3>Upload File</h3>
                     </div>
                     <div class="card-body">
-                        <form action="uploader.php" class="dropzone" id="my-awesome-dropzone"></form>
-                        <!-- <form action="uploader.php" id="my-awesome-dropzone">
+                        <form action="uploader.php" method="post" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label for="">ชื่อโครงการ</label>
-                                <input type="text" name="post" class="form-control">
+                                <input type="text" name="project" class="form-control">
                             </div>
-                            <div class="form-group mt-2">
-                                <div class="dropzone" id="drop"></div>
-                            </div>
-                            <button type="submit" class="btn btn-primary mt-2">Submit</button>
-                        </form> -->
-                        <!-- <form action="uploader.php" method="post" enctype="multipart/form-data">
                             <div class="mb-3">
-                                <label for="formFileMultiple" class="form-label">Multiple files input example</label>
-                        <input class="form-control" type="file" id="formFileMultiple" name="file" multiple>
-                    </div>
-                    
-                    </form> -->
+                                <label for="formFileMultiple" class="form-label">Upload เฉพาะไฟล์ pdf</label>
+                                <input class="form-control" type="file" id="formFileMultiple" name="file[]" multiple>
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-2" name="submit">Submit</button>
+                        </form>
 
 
                     </div>
